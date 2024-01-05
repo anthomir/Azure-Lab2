@@ -2,7 +2,7 @@ const express = require('express');
 const math = require('mathjs');
 
 const app = express();
-const port = 5000;
+const port = 80;
 
 app.get('/numericalintegralservice/:lower/:upper', (req, res) => {
 	const lower = parseFloat(req.params.lower);
